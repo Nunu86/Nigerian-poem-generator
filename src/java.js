@@ -3,11 +3,10 @@ function displayResponse(response) {
     new Typewriter("#final", {
       strings: "Hope you enjoy the poem 🌷",
       autoStart: true,
-      delay: 10,
+      delay: 7,
     });
   }
   setTimeout(check, 1000);
-
   let bodyAttribute = document.querySelector("#bodyElement");
   bodyAttribute.innerHTML = response.data.answer;
 }
@@ -17,9 +16,11 @@ function buttonElement(event) {
 
   let entry = document.querySelector("#example");
 
-  let context = entry.value + `Display only the poem. Maximum of 80 words`;
+  let context =
+    entry.value +
+    `Display only the poem. Include author name and year at the end. Maximum of 80 words`;
 
-  let prompt = "Tell me a Nigerian poem that is about";
+  let prompt = "Tell me a Nigerian poem";
   let apiKey = "8ab570aff7t8c4d757b9f03613oab792";
   let theLink = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
@@ -27,7 +28,8 @@ function buttonElement(event) {
 
   let processing = document.querySelector("#bodyElement");
   console.log(processing);
-  processing.innerHTML = `One moment, fetching poem...`;
+  processing.innerHTML =
+    `One moment, fetching poem about` + ` ` + entry.value + `...`;
 
   let assignChange = document.querySelector(".sormElement");
   assignChange.classList.add("javaStyle");
