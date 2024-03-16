@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nigerian Poem Generator</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Square+Peg&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -12,19 +17,21 @@
 
     <main>
        
-      <form >
+      <form id="formElement">
         
-        <input type="search" placeholder="Enter a category" required class="form-element"
+        <input type="search" placeholder="Enter a category" required class="sormElement"
         id="example" autocomplete="off"></input>
-        <input class="form-element" type="submit" value="Submit" id="sendButton">
+        <input class="sormElement" type="submit" value="Submit" id="sendButton">
     <div class="label"><label for="example">e.g mother, weather, home </label></div>
         
-      </form>
-
-      <div class="body">
-        Onyegburu Nwakadinkpolo
+      </form>  
+      
+      <div class="bodyItem" id="bodyElement">
+        
       </div>
-    </main>
+    </main>     
+
+    <div id="final"></div>
 
     <footer>
       This poem generator was coded by Chinonye Okorie. It is open sourced on
