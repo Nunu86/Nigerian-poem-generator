@@ -1,0 +1,59 @@
+body {
+  background-image: url(https://images.pexels.com/photos/16493902/pexels-photo-16493902/free-photo-of-wooden-pier-on-lakeshore-in-spring.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  max-width: 48%;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(253, 239, 132) 0%,
+    rgb(247, 198, 169) 54.2%,
+    rgb(21, 186, 196) 100.3%
+  );
+  border-radius: 18px;
+}
+h1 {
+  padding-top: 30px;
+  text-align: center;
+}
+form {
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+#example {
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 2px 1px #52bebd;
+}
+#sendButton {
+  border-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  box-shadow: 0 2px 1px #52bebd;
+}
+#sendButton:hover {
+  background: #3dbcbf;
+  color: aliceblue;
+  cursor: progress;
+  transition: all ease-in-out;
+}
+.label {
+  font-weight: 600;
+  font-style: italic;
+}
+.body {
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+footer {
+  text-decoration: solid;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+a {
+  color: blueviolet;
+}
